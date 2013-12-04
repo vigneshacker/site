@@ -4,38 +4,46 @@ img
 	max-width: 100%
 
 header
-	border-bottom: 1px solid black
+	// border-bottom: 1px solid black
+	background: #f9ba60
+	nav
+		list-style-type: none
+		padding: 10px 0
+		li
+			float: left
+			// padding-right: 15px
+			padding: 26px 10px
+			&.logo
+				background-image: url(logo.png)
+				background-repeat: no-repeat
+				background-size: 161px 72px
+				width: 175px
+				height: 72px
+				text-indent: -999999px
 
 section.main
 	background: #f9ba60
 
 section.large
-	// height: 465px
+	height: 500px
 	padding: 20px 0
 
-	.right
-		float: right
-		display: inline
-		width: 40%
+	.buttons
+		margin-top: 20px
 
-	.screenshot
-		// float: right
-		width: 60%
-		display: inline
-
-.btn
-	&.get-started, &.view-github
-		background-repeat: no-repeat
-	&.get-started
-		background-image: url(icons/black/arrow-right.svg)
-		background-size: 22px
-		background-position: 120px 10px
-		padding-right: 40px
-	&.view-github
-		background-image: url(icons/black/curlybrace-2.svg)
-		background-size: 22px
-		background-position: 197px 10px
-		padding-right: 40px
+// .btn
+// 	&.get-started, &.view-github
+// 		background-repeat: no-repeat
+// 	&.get-started
+// 		background-image: url(icons/black/arrow-right.svg)
+// 		background-size: 22px
+// 		background-position: 120px 10px
+// 		padding-right: 40px
+// 	&.view-github
+// 		background-image: url(icons/black/curlybrace-2.svg)
+// 		background-size: 22px
+// 		background-position: 197px 10px
+// 		padding-right: 40px
 
 footer
 	border-top: 1px solid black
