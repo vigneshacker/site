@@ -6,4 +6,20 @@
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 	%body
-		= yield
+		%header
+			%nav.container
+				%li.logo= link_to "Blogr", root_path
+				%li= link_to "About", about_path
+				%li= link_to "Features", features_path
+
+		%section.main
+			.container
+				= yield
+
+		%footer
+			.container
+				.l &copy; Copyright #{Time.now.year} Blogr.
+				.r Blogr is a product of #{link_to "Voupe", "http://voupe.com"}.
+
+		- if Rails.env.development?
+			<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
