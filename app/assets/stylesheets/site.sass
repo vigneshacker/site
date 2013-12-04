@@ -1,53 +1,67 @@
 body
+	overflow-y: scroll
+	font-family: "ff-tisa-sans-web-pro", Arial, sans-serif
+	-webkit-font-smoothing: antialiased
+
+h1, h2, h3, h4, h5, h6
+	font-family: "ff-tisa-sans-web-pro", Arial, sans-serif
 	
 img
 	max-width: 100%
 
 header
-	// border-bottom: 1px solid black
-	background: #f9ba60
+	border-bottom: 1px solid #d1d1d1
+	padding: 10px 0
+	.logo
+		background-image: url(logo.png)
+		background-repeat: no-repeat
+		background-size: 161px 72px
+		width: 175px
+		height: 72px
+		text-indent: -999999px
+		float: left
 	nav
 		list-style-type: none
-		padding: 10px 0
+		
+		float: right
 		li
-			float: left
-			// padding-right: 15px
-			padding: 26px 10px
-			&.logo
-				background-image: url(logo.png)
-				background-repeat: no-repeat
-				background-size: 161px 72px
-				width: 175px
-				height: 72px
-				text-indent: -999999px
+			display: inline-block
+			padding: 25px 10px
+			&:last-child
+				padding-right: 0
+			a
+				padding: 5px 10px
+				border: 2px solid #f9ba60
+				color: #e57e31
+				border-radius: 4px
+				text-decoration: none !important
+				font-size: 16px
+				&:hover, &.active
+					background: #f9ba60
+					color: #fff
+					border-color: #e57e31
 
 section.main
-	background: #f9ba60
 
-section.large
-	height: 500px
-	padding: 20px 0
-
-	.buttons
-		margin-top: 20px
-
-// .btn
-// 	&.get-started, &.view-github
-// 		background-repeat: no-repeat
-// 	&.get-started
-// 		background-image: url(icons/black/arrow-right.svg)
-// 		background-size: 22px
-// 		background-position: 120px 10px
-// 		padding-right: 40px
-// 	&.view-github
-// 		background-image: url(icons/black/curlybrace-2.svg)
-// 		background-size: 22px
-// 		background-position: 197px 10px
-// 		padding-right: 40px
+body.pages.home
+	section.main
+		background: #f9ba60
+	section.large
+		height: 500px
+		padding: 20px 0
+		h2
+			font-weight: bold
+		h4
+			margin-top: 20px
+		.buttons
+			margin-top: 30px
+	footer
+		margin-top: 0
 
 footer
-	border-top: 1px solid black
+	border-top: 1px solid #d1d1d1
 	padding: 25px 0
+	margin-top: 20px
 	.l
 		float: left
 	.r

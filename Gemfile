@@ -14,6 +14,8 @@ gem "unicorn"
 
 gem "gonzo"
 
+gem "active_link_to"
+
 group :development do 
 	gem "capistrano", "~> 2"
 	gem "powder"
