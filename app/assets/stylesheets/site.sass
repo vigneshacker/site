@@ -47,8 +47,8 @@ body.pages.home
 	section.main
 		background: #f9ba60
 	section.large
-		height: 500px
 		padding: 20px 0
+		text-align: center
 		h2
 			font-weight: bold
 		h4
@@ -66,3 +66,16 @@ footer
 		float: left
 	.r
 		float: right
+
+
+@media (min-width: 1200px)
+	section.large
+		min-height: 495px
+
+@media (min-width: 992px) and (max-width: 1200px)
+	section.large
+		min-height: 410px
+		h2
+			margin-top: 5px
+	.buttons
+		margin-top: 10px !important
