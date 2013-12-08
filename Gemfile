@@ -11,13 +11,8 @@ gem "jquery-rails"
 gem "haml-rails"
 
 gem "unicorn"
-
 gem "gonzo"
-
 gem "active_link_to"
-
-gem "redcarpet"
-gem "pygments.rb"
 
 group :development do 
 	gem "capistrano", "~> 2"

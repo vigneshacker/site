@@ -6,7 +6,4 @@ BlogrSite::Application.routes.draw do
   get "features" => "pages#features"
   get "changelog" => "pages#changelog"
 
-  get "docs" => "documentation#index"
-  get "docs/*path" => "documentation#page", as: "docs_page"
-
 end
