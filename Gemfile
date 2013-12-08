@@ -16,6 +16,9 @@ gem "gonzo"
 
 gem "active_link_to"
 
+gem "redcarpet"
+gem "pygments.rb"
+
 group :development do 
 	gem "capistrano", "~> 2"
 	gem "powder"
